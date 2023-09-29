@@ -11,3 +11,12 @@ GET https://cse341-a2oa.onrender.com/ HTTP/1.1
 
 ###
 GET https://cse341-a2oa.onrender.com/650cee2c751b5af5e43fcb3f HTTP/1.1
+
+###
+POST http://localhost:8080 HTTP/1.1
+
+###
+PUT http://localhost:8080/update HTTP/1.1
+
+###
+DELETE http://localhost:8080/delete HTTP/1.1
