@@ -20,3 +20,7 @@ PUT http://localhost:8080/update HTTP/1.1
 
 ###
 DELETE http://localhost:8080/delete HTTP/1.1
+
+###
+GET https://cse341-a2oa.onrender.com HTTP/1.1
+

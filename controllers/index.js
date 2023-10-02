@@ -28,7 +28,7 @@ const addNewContact = async (req, res, next) => {
         await client.connect()
         
         const contactData = {
-            firstName: "Sunny",
+            firstName: "Bonny",
             lastName: "Driggs",
             email: "driggs@test.com",
             favoriteColor: "red",
@@ -50,10 +50,10 @@ const addNewContact = async (req, res, next) => {
 
 const updateContact = async (req,res,next) => {
     try {
-        const id = new ObjectId("650cee2c751b5af5e43fcb40")
+        const id = new ObjectId("65189c0d4d2b456f89cae0d3")
         const client = new MongoClient(process.env.MONGODBURI);
         await client.connect()
-        const mongoData = await client.db('CSE341').collection('Contacts').updateOne({_id: id}, {$set: {firstName: "Bet"}})
+        const mongoData = await client.db('CSE341').collection('Contacts').updateOne({_id: id}, {$set: {firstName: "Donna"}})
         await client.close()
         
         // Check if the update was successful
@@ -70,7 +70,7 @@ const updateContact = async (req,res,next) => {
 }
 
 const deleteContact = async (req,res,next) => {
-    const id = new ObjectId("65173ec617265eec65acf219")
+    const id = new ObjectId("651887d4f1c1cd46459b6d00")
     const client = new MongoClient(process.env.MONGODBURI);
     await client.connect()
     const mongoData = await client.db('CSE341').collection('Contacts').deleteOne({_id: id})
