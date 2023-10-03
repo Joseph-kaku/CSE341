@@ -1,5 +1,6 @@
 // MongoDB connection
-const { MongoClient, ObjectId } = require('mongodb');
+const { MongoClient} = require('mongodb');
+const ObjectId = require('mongodb').ObjectId
 
 
 const getAllContacts = async (req, res, next) => {
