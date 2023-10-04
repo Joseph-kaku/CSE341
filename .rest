@@ -26,7 +26,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:8080/651cc561574c4d755a7e5428 HTTP/1.1
+PUT http://localhost:8080/651dd4d088d163455bc1fef9 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -35,7 +35,7 @@ Content-Type: application/json
     "email": "ds@test.com",
     "favoriteColor": "red",
     "birthday": "June 20th, 1990"
-};
+}
 
 
 ###
