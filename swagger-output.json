@@ -5,10 +5,13 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": [
+    "localhost:8080"
+  ],
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/api-docs": {
@@ -24,6 +27,9 @@
     "/": {
       "get": {
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -62,8 +68,8 @@
           "201": {
             "description": "Created"
           },
-          "404": {
-            "description": "Not Found"
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -71,6 +77,9 @@
     "/{id}": {
       "get": {
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -123,8 +132,8 @@
           "204": {
             "description": "No Content"
           },
-          "404": {
-            "description": "Not Found"
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -133,8 +142,11 @@
       "delete": {
         "description": "",
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
