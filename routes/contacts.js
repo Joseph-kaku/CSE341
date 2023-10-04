@@ -8,12 +8,12 @@ routes.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 const controllers = require('../controllers')
 
-routes.get('/', controllers.getAllContacts)
-routes.get('/:id', controllers.getId)
+routes.get('/', controllers.getAll)
+routes.get('/:id', controllers.getSingle)
 
-routes.post('/', controllers.addNewContact)
+routes.post('/', controllers.createContact)
 
-routes.put('/update', controllers.updateContact)
+routes.put('/:id', controllers.updateContact)
 
 routes.delete('/delete', controllers.deleteContact)
 
