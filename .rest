@@ -27,14 +27,14 @@ content-type: application/json
 
 ###
 PUT http://localhost:8080/651cc561574c4d755a7e5428 HTTP/1.1
-Content-Type: 'application/json'
+Content-Type: application/json
 
 {
-            "firstName": "Bon",
-            "lastName": "Driggs",
-            "email": "ds@test.com",
-            "favoriteColor": "red",
-            "birthday": "June 20th, 1990"
+    "firstName": "Bon",
+    "lastName": "Driggs",
+    "email": "ds@test.com",
+    "favoriteColor": "red",
+    "birthday": "June 20th, 1990"
 };
 
 
