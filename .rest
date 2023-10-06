@@ -13,7 +13,6 @@ GET https://cse341-a2oa.onrender.com/ HTTP/1.1
 GET https://cse341-a2oa.onrender.com/650cee2c751b5af5e43fcb3f HTTP/1.1
 
 ###
-
 POST http://localhost:8080 HTTP/1.1
 content-type: application/json
 
@@ -42,5 +41,26 @@ Content-Type: application/json
 DELETE http://localhost:8080/delete HTTP/1.1
 
 ###
-GET https://cse341-a2oa.onrender.com HTTP/1.1
+POST https://cse341-a2oa.onrender.com HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Nathan Test",
+    "lastName": "Driggs",
+    "email": "driggs@test.com",
+    "favoriteColor": "red",
+    "birthday": "June 20th, 1990"
+}
+
+###
+PUT https://cse341-a2oa.onrender.com HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Bon",
+    "lastName": "Driggs",
+    "email": "ds@test.com",
+    "favoriteColor": "red",
+    "birthday": "June 20th, 1990"
+}
 
