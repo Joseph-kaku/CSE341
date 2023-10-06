@@ -37,19 +37,19 @@ Content-Type: application/json
 }
 
 
-###
-DELETE http://localhost:8080/delete HTTP/1.1
+###      
+DELETE http://localhost:8080/651dd415be47df15f4d30363 HTTP/1.1
 
 ###
 POST https://cse341-a2oa.onrender.com HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Nathan Test",
-    "lastName": "Driggs",
-    "email": "driggs@test.com",
-    "favoriteColor": "red",
-    "birthday": "June 20th, 1990"
+    "firstName": "Kevin",
+    "lastName": "Leven",
+    "email": "ktk@test.com",
+    "favoriteColor": "green",
+    "birthday": "June 16th, 1990"
 }
 
 ###
@@ -64,3 +64,5 @@ Content-Type: application/json
     "birthday": "June 20th, 1990"
 }
 
+### 651c8779cbaa2611c7f948bb 651c878bcbaa2611c7f948bc 651cbb9877b5577c6c075da3 651cc561574c4d755a7e5428 651cc60a9d51b7303b7e4248
+DELETE http://cse341-a2oa.onrender.com/651c8779cbaa2611c7f948bb HTTP/1.1

@@ -15,6 +15,6 @@ routes.post('/', controllers.createContact)
 
 routes.put('/:id', controllers.updateContact)
 
-routes.delete('/delete', controllers.deleteContact)
+routes.delete('/:id', controllers.deleteContact)
 
 module.exports = routes
