@@ -5,9 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": [
-    "cse341-a2oa.onrender.com"
-  ],
+  "host": "cse341-a2oa.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -135,11 +133,17 @@
             "description": "Internal Server Error"
           }
         }
-      }
-    },
-    "/delete": {
+      },
       "delete": {
         "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "204": {
             "description": "No Content"
